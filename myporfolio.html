@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/moi1.css">
+<link rel="stylesheet" href="css/lightbox.css">
+<title>Tram's Portfolio</title>
+</head>
+
+<body>
+	<div id="header">	
+		 <nav>
+			<h1 class="logo"> Tram's Portfolio</h1> 
+			<ul id="sidemenu">
+				<button type="button" class="nav-toggle1" onclick="closemenu()">&#9776;</button>
+			  <li> <a href="#"> Home</a></li>
+			  <li> <a href="#About Me"> About Me</a></li>
+				<li> <a href="#Services"> Services</a></li>
+			  <li> <a href="#porfolio"> My Gallery</a></li>
+			  <li> <a href="#contact"> Contact</a></li>
+		  </ul>
+			  <button type="button" class="nav-toggle" onclick="openmenu()">&#9776;</button>
+		</nav>
+		<div class="header-text">
+			<h2 class="text-light">I'm <span class="element"  style="color: #F61616"></span></h2>
+			<h1>Designer, Web Developer</h1>
+			</div>
+		</div>
+	</div>
+	
+	<div id="About Me">
+	    <div class="container">
+		  <div class="row">
+			 <div class="about-col-1">
+			  <img src="image/birmingham-museums-trust-SlfifCId98o-unsplash.jpg">
+			  </div>
+			  <div class="about-col-2">
+			   <h1 class="sub"> About Me</h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nobis mollitia voluptatibus, consequatur magni quaerat aut commodi fugiat sed ea earum sunt, optio neque, debitis officiis ex maxime autem iure!</p>
+				 <div class="tab-tilles">
+				  <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+					 <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+					 <p class="tab-links" onclick="opentab('Education')">Education</p>
+				  </div>
+				  <div class="tab-contents active-tab" id="Skills">
+				  <ul>
+					  <li><span>UX/UI</span><br>Designing Web/App Interfaces</li>
+					  <li><span>Web Development</span><br> Web App Interfaces</li>
+					  <li><span>App Development</span><br>Building Android/IOS apps</li>
+					</ul>
+				  </div>
+				  
+				   <div class="tab-contents " id="Experience">
+				  <ul>
+					  <li><span>2021-2022</span><br>Studing in Arena</li>
+					  <li><span>2022-Current</span><br> Work at home</li>
+					</ul>
+				  </div>
+				  
+				   <div class="tab-contents" id="Education">
+				  <ul>
+					  <li><span>2020</span><br>Designing Web/App Interfaces</li>
+					  <li><span>2021</span><br> Web App Interfaces</li>
+					  <li><span>2022</span><br>Building Android/IOS apps</li>
+					</ul>
+				  </div>
+				  
+			  </div>
+			</div>
+		</div>
+	</div>
+	<!----------------Services--------->
+	<div id="Services">
+	    <div class="container">
+		 <h1 class="sub">My Services</h1>
+		<div class="Service-list">
+			  <div>
+				  
+			   <h2> Web Design</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit odit quo nulla repellat ducimus enim esse autem dolorum quas, consequuntur distinctio, iure minima mollitia in, quam id! Recusandae, cumque, architecto!</p>
+				  <a href="#">Learn More</a>
+			</div>
+			<div>
+			
+			   <h2> UX/UI Design</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit odit quo nulla repellat ducimus enim esse autem dolorum quas, consequuntur distinctio, iure minima mollitia in, quam id! Recusandae, cumque, architecto!</p>
+				  <a href="#">Learn More</a>
+			</div>
+			<div>
+				
+			   <h2> App Design</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit odit quo nulla repellat ducimus enim esse autem dolorum quas, consequuntur distinctio, iure minima mollitia in, quam id! Recusandae, cumque, architecto!</p>
+				  <a href="#">Learn More</a>
+			</div>
+			</div>
+		</div>	
+	
+	</div>
+
+	<script>
+	   var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+	  function opentab(tabname){
+		  for(tablink of tablinks){
+			  tablink.classList.remove("active-link");
+		  }
+		  for(tabcontent of tabcontents){
+			  tabcontent.classList.remove("active-tab");
+		  }
+		  
+		  event.currentTarget.classList.add("active-link");
+		  document.getElementById(tabname).classList.add("active-tab")
+	  }
+	</script>
+	<!-------------Porfolio------------->
+	<div id="porfolio">
+	  <div class="container">
+		 <h1 class="sub">My Gallery</h1>
+		  <div class="work-list">
+		  <div class="work">
+			  <a href="image/1.jpg" data-lightbox="roadtrip">
+			  <img src="image/h500/1.jpg" alt="#" class="w-100">
+				</a>
+			  </div>
+			  <div class="work">
+			  <a href="image/2.jpg" data-lightbox="roadtrip">
+			  <img src="image/h500/2.jpg" alt="#" class="w-100">
+				</a>
+			  </div>
+			   <div class="work">
+			  <a href="image/4.jpg" data-lightbox="roadtrip">
+			  <img src="image/4.jpg" alt="#" class="w-100">
+				</a>
+			  </div>
+			  <div class="work">
+			  <a href="image/5.jpg" data-lightbox="roadtrip">
+			  <img src="image/h500/5.jpg" alt="#" class="w-100">
+				</a>
+			  </div>
+			   <div class="work">
+			  <a href="image/6.jpg" data-lightbox="roadtrip">
+			  <img src="image/h500/6.jpg" alt="#" class="w-100">
+				</a>
+			  </div>
+			   <div class="work">
+			  <a href="image/7.jpg" data-lightbox="roadtrip">
+			  <img src="image/h500/7.jpg" alt="#" class="w-100">
+				</a>
+			  </div>
+		  </div>
+		</div>
+</div>
+	<!---------------Contact------------>
+	<div id="contact">
+	 <div class="conatiner">
+		    <h1 class="sub"> Contact Me</h1>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script>
+	var sidemenu = document.getElementById("sidemenu");
+	
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+		function closemenu(){
+		sidemenu.style.right = "-200px";
+	}
+	
+	</script>
+	
+	
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/moi.js"></script>
+	</body>
+</html>
+
